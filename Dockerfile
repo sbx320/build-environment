@@ -18,5 +18,5 @@ RUN apt-get update && apt-get install -y \
 	clang-5.0 \
 	clang++-5.0 \
 	ninja-build \
-	build-essential \
+	build-essential && \
 	apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*

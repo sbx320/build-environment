@@ -20,3 +20,6 @@ RUN apt-get update && apt-get install -y \
 	ninja-build \
 	build-essential && \
 	apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+RUN ln -sf /usr/bin/clang-5.0 /usr/bin/cc && \
+	ln -sf /usr/bin/clang++-5.0 /usr/bin/cpp && \
+	ln -sf /usr/bin/clang++-5.0 /usr/bin/c++
